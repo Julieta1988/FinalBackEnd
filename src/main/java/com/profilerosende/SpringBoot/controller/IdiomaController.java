@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("idioma")//http://localhost:8080/idioma
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping("idioma")//https://finalfrontend-c7624.web.app/idioma
+@CrossOrigin(origins = "https://finalfrontend-c7624.web.app")
 public class IdiomaController {
     @Autowired
     IdiomaService idioServ;

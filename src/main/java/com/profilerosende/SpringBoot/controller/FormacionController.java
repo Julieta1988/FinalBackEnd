@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("formacion")//http://localhost:8080/formacion
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping("formacion")//https://finalfrontend-c7624.web.app/formacion
+@CrossOrigin(origins = "https://finalfrontend-c7624.web.app")
 public class FormacionController {
     @Autowired
     FormacionService formaServ;

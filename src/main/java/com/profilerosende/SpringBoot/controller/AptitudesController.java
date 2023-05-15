@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("aptitudes")//http://localhost:8080/aptitudes
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping("aptitudes")//https://finalfrontend-c7624.web.app/aptitudes
+@CrossOrigin(origins = "https://finalfrontend-c7624.web.app")
 public class AptitudesController {
     @Autowired
     AptitudesService aptiServ;

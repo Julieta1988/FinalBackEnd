@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("persona")//http://localhost:8080/persona
-@CrossOrigin(origins = "http://localhost:4200") //con qué se va a cruzar: con nuestro FrontEnd en Angular
+@RequestMapping("persona")//https://finalfrontend-c7624.web.app/persona
+@CrossOrigin(origins = "https://finalfrontend-c7624.web.app") //con qué se va a cruzar: con nuestro FrontEnd en Angular
 public class PersonaController {
     @Autowired
     PersonaService persoServ;

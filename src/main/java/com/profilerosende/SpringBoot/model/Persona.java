@@ -11,27 +11,17 @@ public class Persona {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombre;
-    private String apellido;
-    /*
-    @Temporal(TemporalType.DATE)
-    private Date nacimiento;
-
-    @Lob
-    private String acercade/presentacion;
-    si no tima lob (lo vemos en la estructura de la base de datos)
-    podemos hacer:
-    @Size(min = 1m max = 40, message = "no cumple con la longitud")
-    
-    imagen es una string porq esta guardada como url
-    */
+    private String imagen;
+    private String presentacion;
      
 //alt + insert para generar constructor vacio y luego otro (SIN ID)    
     public Persona(){
     }
     
-    public Persona (String nombre, String apellido){
+    public Persona (String nombre, String imagen, String presentacion){
         this.nombre = nombre;
-        this.apellido = apellido;
+        this.imagen = imagen;
+        this.presentacion = presentacion;
     }    
 //click derecho generar getter and setter
     public int getId() {
@@ -50,11 +40,19 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getImagen() {
+        return imagen;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    } 
+    
+    public String getPresentacion() {
+        return presentacion;
+    }
+
+    public void setPresentacion(String presentacion) {
+        this.presentacion = presentacion;
     } 
 }
