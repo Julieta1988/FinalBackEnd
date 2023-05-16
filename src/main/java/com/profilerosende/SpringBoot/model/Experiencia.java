@@ -13,13 +13,13 @@ public class Experiencia {
     private String empresa;
     private String puesto;
     private String duracion;
-    private int inicio;
-    private int fin;
+    private String inicio;
+    private String fin;
 
     public Experiencia() {
     }
 
-    public Experiencia(String empresa, String puesto, String duracion, int inicio, int fin) {
+    public Experiencia(String empresa, String puesto, String duracion, String inicio, String fin) {
         this.empresa = empresa;
         this.puesto = puesto;
         this.duracion = duracion;
@@ -59,20 +59,19 @@ public class Experiencia {
         this.duracion = duracion;
     }
 
-    public int getInicio() {
+    public String getInicio() {
         return inicio;
     }
 
-    public void setInicio(int inicio) {
+    public void setInicio(String inicio) {
         this.inicio = inicio;
     }
 
-    public int getFin() {
+    public String getFin() {
         return fin;
     }
 
-    public void setFin(int fin) {
+    public void setFin(String fin) {
         this.fin = fin;
-    }
-           
+    }          
 }
