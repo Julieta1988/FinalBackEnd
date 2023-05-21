@@ -1,7 +1,7 @@
 package com.profilerosende.SpringBoot.service;
 
 import com.profilerosende.SpringBoot.model.Persona;
-import com.profilerosende.SpringBoot.repository.PersonaRopository;
+import com.profilerosende.SpringBoot.repository.PersonaRepository;
 import jakarta.transaction.Transactional;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class PersonaService {
     
     @Autowired
-    public PersonaRopository persoRepo;
+    public PersonaRepository persoRepo;
     
     public List<Persona> verPersonas(){
         List<Persona> listaPersonas = persoRepo.findAll();
@@ -35,4 +35,5 @@ public class PersonaService {
        Persona perso = persoRepo.findById(id).orElse(null);
        return perso;
     }
-} 
+    
+}

@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity        
+@Entity  
 public class Experiencia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -58,20 +58,20 @@ public class Experiencia {
     public void setDuracion(String duracion) {
         this.duracion = duracion;
     }
-
-    public String getInicio() {
+    
+        public String getInicio() {
         return inicio;
     }
 
     public void setInicio(String inicio) {
         this.inicio = inicio;
     }
-
-    public String getFin() {
+    
+        public String getFin() {
         return fin;
     }
 
     public void setFin(String fin) {
         this.fin = fin;
-    }          
+    }   
 }
