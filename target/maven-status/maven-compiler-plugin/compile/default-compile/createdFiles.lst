@@ -8,7 +8,6 @@ com\profilerosende\SpringBoot\model\Aptitudes.class
 com\profilerosende\SpringBoot\model\Persona.class
 com\profilerosende\SpringBoot\repository\PersonaRepository.class
 com\profilerosende\SpringBoot\service\IdiomaService.class
-com\profilerosende\SpringBoot\Application$1.class
 com\profilerosende\SpringBoot\controller\ExperienciaController.class
 com\profilerosende\SpringBoot\controller\FormacionController.class
 com\profilerosende\SpringBoot\controller\IdiomaController.class
@@ -20,4 +19,3 @@ com\profilerosende\SpringBoot\model\Experiencia.class
 com\profilerosende\SpringBoot\controller\PersonaController.class
 com\profilerosende\SpringBoot\service\AptitudesService.class
 com\profilerosende\SpringBoot\Application.class
-com\profilerosende\SpringBoot\WebConfig.class
